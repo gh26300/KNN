@@ -50,7 +50,7 @@ def knn(input,dataset,labels,k):
 def TestData(seed):  
     '用做讀檔練習'
     'names 設定文件標籤 方便後續刪除非必要行列操作 ### skiprows 略過指定資料行讀取'
-    iris = pd.read_csv('D:\MSP_LAB (碩一)\圖型辨識_陳洳瑾\iris.data',names=["a","b","c","d","type"])
+    iris = pd.read_csv('iris.data',names=["a","b","c","d","type"])
     '用copy避免動用其原數據'
     iris2 = iris.copy()
     '刪除type列資料'
